@@ -1,0 +1,83 @@
+@use "./partials/fonts" as *;
+@use "./partials/global" as *;
+
+/**************************/
+/* Hero Section */
+/**************************/
+.hero {
+  background-color: $background-color;
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 4rem;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+    grid-column: 2;
+    &--heading {
+      font-size: 4rem;
+    }
+    &--button {
+      color: $white;
+      background-color: $style-color;
+      width: fit-content;
+      padding: 1rem 4rem;
+      border: none;
+      border-radius: 2rem;
+    }
+  }
+  &__right {
+    grid-column: 3;
+    & img {
+      width: 40rem;
+    }
+  }
+}
+
+/**************************/
+/* Recommendations */
+/**************************/
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 4rem;
+  &__card {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    &--item {
+      width: 28rem;
+      height: 40rem;
+      @include card-border-shadow;
+      color: $white;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+}
+.item1 {
+  background-image: url(../Assets/Images/hawaii.jpg);
+}
+.item2 {
+  background-image: url(../Assets/Images/iceland.jpg);
+}
+.item3 {
+  background-image: url(../Assets/Images/greece.jpg);
+}
+.item1,
+.item2,
+.item3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,58 @@
+@use "./partials/fonts" as *;
+@use "./partials/global" as *;
+
+/**************************/
+/* Hero */
+/**************************/
+.destination-hero {
+  &--Hawaii {
+    background-image: url(../Assets/Images/hawaii.jpg);
+  }
+  &--Iceland {
+    background-image: url(../Assets/Images/iceland.jpg);
+  }
+  &--Greece {
+    background-image: url(../Assets/Images//greece.jpg);
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10rem;
+  & h1 {
+    font-size: 5rem;
+    color: $white;
+    margin-bottom: 3rem;
+    text-shadow: 0.5px 0.5px 2px $text-color;
+  }
+}
+.itinerary {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  color: black;
+  &__card {
+    width: 25rem;
+    height: 35rem;
+    background-color: $white;
+    @include card-border-shadow;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    & h3 {
+      border-bottom: 2px solid black;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    & p {
+      background-color: $background-color;
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}

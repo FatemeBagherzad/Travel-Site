@@ -1,0 +1,127 @@
+// *********************
+// variables
+// *********************
+
+// **********colors***********
+$white: #ffffff;
+$text-color: #335576;
+$style-color: #db7a4e;
+$background-color: #fefaf5;
+
+// ******borderAndSahdow*******
+@mixin card-border-shadow {
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+// *********************
+// reset
+// *********************
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Verdana Pro";
+  line-height: 1.2;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: all 0.3s;
+  // width:80vw;
+  // margin: auto;
+  font-size: 1.6rem;
+  color: $text-color;
+}
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  padding: 0;
+}
+
+.container {
+  /* 1140px */
+  max-width: 150rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* navigation */
+/**************************/
+.NavBackground {
+  background-color: $white;
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 10rem;
+  &--logo {
+    font-weight: 900;
+    font-size:2rem;
+  }
+  &--menu {
+    display: flex;
+    gap: 1rem;
+    &-item {
+      padding: 1rem;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 0.2rem solid $style-color;
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 0.4rem solid $style-color;
+}
+
+/**************************/
+/* Footer */
+/**************************/
+.footerBackground {
+  background-color: $background-color;
+  padding: 4rem 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+
+  & h6 {
+    color: $style-color;
+    font-weight: 300;
+  }
+  &__hours--days {
+    display: flex;
+    gap: 3rem;
+  }
+  &__social--logos {
+    display: flex;
+    gap: 3rem;
+    & img {
+      margin-top: 1.5rem;
+    }
+  }
+}
+.footer__hours,
+.footer__contact,
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

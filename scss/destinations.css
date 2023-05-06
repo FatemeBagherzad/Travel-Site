@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-Regular.eot");
+  src: local("../../Assets/Fonts/Verdana Pro"), local("../../Assets/Fonts/VerdanaPro-Regular"), url("../../Assets/Fonts/VerdanaPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-Regular.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-Regular.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-Bold.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Bold"), local("../../Assets/Fonts/VerdanaPro-Bold"), url("../../Assets/Fonts/VerdanaPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-Bold.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-Bold.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-Light.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Light"), local("../../Assets/Fonts/VerdanaPro-Light"), url("../../Assets/Fonts/VerdanaPro-Light.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-Light.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-Light.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-SemiBold.eot");
+  src: local("../../Assets/Fonts/Verdana Pro SemiBold"), local("../../Assets/Fonts/VerdanaPro-SemiBold"), url("../../Assets/Fonts/VerdanaPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-SemiBold.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-SemiBold.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-Black.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Black"), local("../../Assets/Fonts/VerdanaPro-Black"), url("../../Assets/Fonts/VerdanaPro-Black.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-Black.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-Black.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-Italic.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Italic"), local("../../Assets/Fonts/VerdanaPro-Italic"), url("../../Assets/Fonts/VerdanaPro-Italic.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-Italic.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-Italic.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-BoldItalic.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Bold Italic"), local("../../Assets/Fonts/VerdanaPro-BoldItalic"), url("../../Assets/Fonts/VerdanaPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-BoldItalic.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-BoldItalic.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-LightItalic.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Light Italic"), local("../../Assets/Fonts/VerdanaPro-LightItalic"), url("../../Assets/Fonts/VerdanaPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-LightItalic.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-LightItalic.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-SemiBoldItalic.eot");
+  src: local("../../Assets/Fonts/Verdana Pro SemiBold Italic"), local("../../Assets/Fonts/VerdanaPro-SemiBoldItalic"), url("../../Assets/Fonts/VerdanaPro-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-SemiBoldItalic.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-SemiBoldItalic.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Verdana Pro";
+  src: url("../../Assets/Fonts/VerdanaPro-BlackItalic.eot");
+  src: local("../../Assets/Fonts/Verdana Pro Black Italic"), local("../../Assets/Fonts/VerdanaPro-BlackItalic"), url("../../Assets/Fonts/VerdanaPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/Fonts/VerdanaPro-BlackItalic.woff2") format("woff2"), url("../../Assets/Fonts/VerdanaPro-BlackItalic.woff") format("woff"), url("../../Assets/Fonts/VerdanaPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Verdana Pro";
+  line-height: 1.2;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: all 0.3s;
+  font-size: 1.6rem;
+  color: #335576;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  padding: 0;
+}
+
+.container {
+  /* 1140px */
+  max-width: 150rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* navigation */
+/**************************/
+.NavBackground {
+  background-color: #ffffff;
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 10rem;
+}
+.header__nav--logo {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.header__nav--menu {
+  display: flex;
+  gap: 1rem;
+}
+.header__nav--menu-item {
+  padding: 1rem;
+  cursor: pointer;
+}
+.header__nav--menu-item:hover {
+  border-bottom: 0.2rem solid #db7a4e;
+}
+
+.active {
+  border-bottom: 0.4rem solid #db7a4e;
+}
+
+/**************************/
+/* Footer */
+/**************************/
+.footerBackground {
+  background-color: #fefaf5;
+  padding: 4rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+}
+.footer h6 {
+  color: #db7a4e;
+  font-weight: 300;
+}
+.footer__hours--days {
+  display: flex;
+  gap: 3rem;
+}
+.footer__social--logos {
+  display: flex;
+  gap: 3rem;
+}
+.footer__social--logos img {
+  margin-top: 1.5rem;
+}
+
+.footer__hours,
+.footer__contact,
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/**************************/
+/* Hero */
+/**************************/
+.destination-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10rem;
+}
+.destination-hero--Hawaii {
+  background-image: url(../Assets/Images/hawaii.jpg);
+}
+.destination-hero--Iceland {
+  background-image: url(../Assets/Images/iceland.jpg);
+}
+.destination-hero--Greece {
+  background-image: url(../Assets/Images//greece.jpg);
+}
+.destination-hero h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-shadow: 0.5px 0.5px 2px #335576;
+}
+
+.itinerary {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  color: black;
+}
+.itinerary__card {
+  width: 25rem;
+  height: 35rem;
+  background-color: #ffffff;
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.itinerary__card h3 {
+  border-bottom: 2px solid black;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.itinerary__card p {
+  background-color: #fefaf5;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}/*# sourceMappingURL=destinations.css.map */
