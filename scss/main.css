@@ -99,10 +99,10 @@ a {
 }
 
 .container {
-  /* 1140px */
-  max-width: 150rem;
-  padding: 0 3.2rem;
+  /* 1280px */
+  max-width: 128rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /**************************/
@@ -120,7 +120,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 10rem;
+  padding-top: 1.5rem;
 }
 .header__nav--logo {
   font-weight: 900;
@@ -152,7 +152,7 @@ a {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   line-height: 2;
 }
 .footer h6 {
@@ -182,15 +182,21 @@ a {
 /**************************/
 /* Hero Section */
 /**************************/
-.hero {
+.hero-background {
   background-color: #fefaf5;
   width: 100vw;
   height: 70vh;
-  display: grid;
-  grid-template-columns: 2fr 5fr 3fr 2fr;
-  grid-template-rows: 1fr;
+  display: flex;
   align-items: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
   gap: 4rem;
 }
 .hero__left {
@@ -198,7 +204,7 @@ a {
   flex-direction: column;
   justify-content: left;
   gap: 3rem;
-  grid-column: 2;
+  grid-column: 1;
 }
 .hero__left--heading {
   font-size: 4rem;
@@ -213,10 +219,10 @@ a {
   border-radius: 2rem;
 }
 .hero__right {
-  grid-column: 3;
+  grid-column: 2;
 }
 .hero__right img {
-  width: 40rem;
+  width: 50rem;
 }
 
 /**************************/
@@ -226,7 +232,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 5rem 4rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 .recommendations__card {
   display: flex;
@@ -265,4 +272,4 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}/*# sourceMappingURL=main.css.map */
+}

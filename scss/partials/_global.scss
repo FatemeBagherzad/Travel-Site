@@ -48,10 +48,10 @@ a {
 }
 
 .container {
-  /* 1140px */
-  max-width: 150rem;
-  padding: 0 3.2rem;
+  /* 1280px */
+  max-width: 128rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /**************************/
@@ -68,10 +68,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 10rem;
-  &--logo {
+  padding-top: 1.5rem;
+    &--logo {
     font-weight: 900;
-    font-size:2rem;
+    font-size: 2rem;
   }
   &--menu {
     display: flex;
@@ -99,7 +99,7 @@ a {
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   line-height: 2;
 
   & h6 {

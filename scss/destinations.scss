@@ -7,19 +7,27 @@
 .destination-hero {
   &--Hawaii {
     background-image: url(../Assets/Images/hawaii.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &--Iceland {
     background-image: url(../Assets/Images/iceland.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &--Greece {
-    background-image: url(../Assets/Images//greece.jpg);
+    background-image: url(../Assets/Images//greece.jpg);  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding-top: 10rem;
+}
+.destination-hero {
   & h1 {
     font-size: 5rem;
     color: $white;
@@ -30,20 +38,21 @@
 .itinerary {
   display: flex;
   justify-content: center;
+  margin-top: 8rem;
   gap: 4rem;
   color: black;
   &__card {
-    width: 25rem;
-    height: 35rem;
+    width: 26rem;
+    height: 36rem;
     background-color: $white;
     @include card-border-shadow;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     & h3 {
-      border-bottom: 2px solid black;
+      border-bottom: 3px solid black;
       width: 100%;
       text-align: center;
       margin-bottom: 2rem;

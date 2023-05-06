@@ -99,10 +99,10 @@ a {
 }
 
 .container {
-  /* 1140px */
-  max-width: 150rem;
-  padding: 0 3.2rem;
+  /* 1280px */
+  max-width: 128rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /**************************/
@@ -120,7 +120,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 10rem;
+  padding-top: 1.5rem;
 }
 .header__nav--logo {
   font-weight: 900;
@@ -152,7 +152,7 @@ a {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   line-height: 2;
 }
 .footer h6 {
@@ -183,22 +183,29 @@ a {
 /* Hero */
 /**************************/
 .destination-hero {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding-top: 10rem;
 }
 .destination-hero--Hawaii {
   background-image: url(../Assets/Images/hawaii.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .destination-hero--Iceland {
   background-image: url(../Assets/Images/iceland.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .destination-hero--Greece {
   background-image: url(../Assets/Images//greece.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .destination-hero h1 {
   font-size: 5rem;
   color: #ffffff;
@@ -209,24 +216,25 @@ a {
 .itinerary {
   display: flex;
   justify-content: center;
+  margin-top: 8rem;
   gap: 4rem;
   color: black;
 }
 .itinerary__card {
-  width: 25rem;
-  height: 35rem;
+  width: 26rem;
+  height: 36rem;
   background-color: #ffffff;
   border: 1px solid hsla(0, 0%, 0%, 0.2);
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 .itinerary__card h3 {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
@@ -236,4 +244,4 @@ a {
   width: 100%;
   text-align: center;
   padding: 1rem;
-}/*# sourceMappingURL=destinations.css.map */
+}
