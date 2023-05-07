@@ -85,7 +85,7 @@ body {
   line-height: 1.2;
   font-weight: 400;
   overflow-x: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s 0.5s ease-in-out;
   font-size: 1.6rem;
   color: #335576;
 }
@@ -106,6 +106,16 @@ a {
 }
 
 /**************************/
+/* Button */
+/**************************/
+.btn:hover {
+  cursor: pointer;
+  color: #335576;
+  background-color: transparent;
+  border: 2px solid #335576;
+}
+
+/**************************/
 /* navigation */
 /**************************/
 .NavBackground {
@@ -114,6 +124,7 @@ a {
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .header__nav {
@@ -128,11 +139,17 @@ a {
 }
 .header__nav--menu {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
+  font-size: 1.4rem;
 }
 .header__nav--menu-item {
   padding: 1rem;
   cursor: pointer;
+}
+.header__nav--menu-item-button {
+  background-color: #db7a4e;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
 }
 .header__nav--menu-item:hover {
   border-bottom: 0.2rem solid #db7a4e;
@@ -140,6 +157,51 @@ a {
 
 .active {
   border-bottom: 0.4rem solid #db7a4e;
+}
+
+.activeb {
+  border-bottom: 0.5rem solid #335576;
+}
+
+/**************************/
+/* Search navigation */
+/**************************/
+.search-nav-background {
+  position: fixed;
+  top: 5rem;
+  background-color: #335576;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  padding: 0.5rem 0;
+  z-index: 999;
+}
+
+.search-nav {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+.search-nav select,
+.search-nav input {
+  width: 25rem;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fefaf5;
+  border-radius: 9px;
+  display: flex;
+}
+.search-nav button {
+  display: inline-block;
+  padding: 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-nav button:hover {
+  transform: scale(1.1);
 }
 
 /**************************/
@@ -209,6 +271,7 @@ a {
 .destination-hero h1 {
   font-size: 5rem;
   color: #ffffff;
+  margin-top: 5rem;
   margin-bottom: 3rem;
   text-shadow: 0.5px 0.5px 2px #335576;
 }
@@ -244,4 +307,7 @@ a {
   width: 100%;
   text-align: center;
   padding: 1rem;
+}
+.itinerary__card:hover p {
+  box-shadow: 1px 1px #db7a4e;
 }

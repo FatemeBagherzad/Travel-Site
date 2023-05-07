@@ -14,7 +14,9 @@
     <header class="header">
       <div class="NavBackground">
         <nav class="header__nav container">
-          <span class="header__nav--logo">Travel Site</span>
+          <span class="header__nav--logo"
+            ><a href="./index.html">Travel Site</a></span
+          >
           <ul class="header__nav--menu">
             <li>
               <a class="header__nav--menu-item active" href="./index.html"
@@ -36,8 +38,59 @@
                 >Greece</a
               >
             </li>
+            <li><a href="./pages/book-now.html" class="header__nav--menu-item-button btn">Book Now</a></li>
           </ul>
         </nav>
+      </div>
+
+      <div class="search-nav-background">
+        <form action="" class="search-nav container">
+          <select
+            type="text"
+            id="category"
+            name=""
+            placeholder="Select a category"
+          >
+            <option value="All Deals">All Deals</option>
+            <option value="Hotels">Hotels</option>
+            <option value="Vacations">Vacations</option>
+            <option value="Cruises">Cruises</option>
+            <option value="Live Performances and Events">
+              Live Performances and Events
+            </option>
+            <option value="Restaurants">Restaurants</option>
+            <option value="Spas">Spas</option>
+            <option value="Family-Friendly Activities">
+              Family-Friendly Activities
+            </option>
+            <option value="All Inclusive Vacations">
+              All Inclusive Vacations
+            </option>
+            <option value="Activities">Activities</option>
+          </select>
+
+          <select
+            type="text"
+            id="destination"
+            name=""
+            placeholder="Start typing or select a destination"
+          >
+            <option value="Anywhere">Anywheres</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Quebec">Quebec</option>
+            <option value="New York">New York</option>
+            <option value="Caribean">Caribean</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+          </select>
+
+          <input type="date" id="Date" name="date" placeholder="Select Dates" />
+
+          <button type="submit">
+            <img src="./Assets/Icons/icons8-search-40.svg" width="16" />
+          </button>
+        </form>
       </div>
 
       <section class="hero-background">
@@ -50,9 +103,18 @@
               Don't let your dreams be just dreams. Experience the world by
               booking a vacation with us now.
             </p>
-            <button class="hero__left--button">Get started</button>
+            <button class="hero__left--button btn">Get started</button>
           </div>
-          <div class="hero__right"><img src="./Assets/Images/hero.png" /></div>
+          <div class="hero__right">
+            <img src="./Assets/Images/hero.png" />
+            <a class="hero__right--light"
+              ><img src="./Assets/Images/heroLight.png"
+            /></a>
+          </div>
+
+          <div id="hero__airplane-animation">
+            <img src="./Assets/Images/AirplaneAnimation.png" width="100" />
+          </div>
         </div>
       </section>
     </header>
@@ -60,9 +122,23 @@
     <section class="recommendations container">
       <h1 class="recommendations__header">Recommendations</h1>
       <div class="recommendations__card container">
-        <div class="recommendations__card--item item1"><h3>Hawaii</h3></div>
-        <div class="recommendations__card--item item2"><h3>Iceland</h3></div>
-        <div class="recommendations__card--item item3"><h3>Greece</h3></div>
+        <a href="./pages/hawaii.html"
+          ><div class="recommendations__card--item item1">
+            <h3>Hawaii</h3>
+          </div></a
+        >
+
+        <a href="./pages/iceland.html"
+          ><div class="recommendations__card--item item2">
+            <h3>Iceland</h3>
+          </div></a
+        >
+
+        <a href="./pages/greece.html"
+          ><div class="recommendations__card--item item3">
+            <h3>Greece</h3>
+          </div></a
+        >
       </div>
     </section>
 

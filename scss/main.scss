@@ -19,6 +19,7 @@
   align-items: center;
   margin-top: 5rem;
   gap: 4rem;
+  position: relative;
   &__left {
     display: flex;
     flex-direction: column;
@@ -37,6 +38,7 @@
       border-radius: 2rem;
     }
   }
+
   &__right {
     grid-column: 2;
     & img {
@@ -44,7 +46,36 @@
     }
   }
 }
-
+.hero__right {
+  position: relative;
+  &--light {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+#hero__airplane-animation {
+  position: absolute;
+  bottom: -8rem;
+  left: 2rem;
+  animation: airplane 8s 1s infinite ease-out;
+}
+@keyframes airplane {
+  0% {
+    transform: translate(0, 0);
+  }
+  70% {
+    transform: translate(90rem, -50rem);
+  }
+  100% {
+    transform: translate(90rem, -40rem);
+  }
+}
 /**************************/
 /* Recommendations */
 /**************************/
@@ -52,7 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin-top:5rem ;
+  margin-top: 5rem;
   margin-bottom: 10rem;
   &__card {
     display: flex;
@@ -68,6 +99,10 @@
       justify-content: end;
       padding: 2rem 2rem;
       font-size: 2rem;
+      &:hover {
+        border: 2px solid $white;
+        transform: scale(1.05);
+      }
     }
   }
 }

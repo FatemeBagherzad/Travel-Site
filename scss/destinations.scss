@@ -18,7 +18,8 @@
     background-size: cover;
   }
   &--Greece {
-    background-image: url(../Assets/Images//greece.jpg);  background-position: center;
+    background-image: url(../Assets/Images//greece.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -31,6 +32,7 @@
   & h1 {
     font-size: 5rem;
     color: $white;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     text-shadow: 0.5px 0.5px 2px $text-color;
   }
@@ -51,17 +53,23 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    & h3 {
+
+    h3 {
       border-bottom: 3px solid black;
       width: 100%;
       text-align: center;
       margin-bottom: 2rem;
     }
-    & p {
+    p {
       background-color: $background-color;
       width: 100%;
       text-align: center;
       padding: 1rem;
+    }
+    &:hover {
+      p {
+        box-shadow: 1px 1px $style-color;
+      }
     }
   }
 }

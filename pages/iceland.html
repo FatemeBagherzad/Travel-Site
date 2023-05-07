@@ -14,7 +14,9 @@
     <header class="header">
       <div class="NavBackground">
         <nav class="header__nav container">
-          <span class="header__nav--logo">Travel Site</span>
+          <span class="header__nav--logo"
+            ><a href="../index.html">Travel Site</a></span
+          >
           <ul class="header__nav--menu">
             <li>
               <a class="header__nav--menu-item" href="../index.html">Home</a>
@@ -36,9 +38,68 @@
                 >Greece</a
               >
             </li>
+
+            <li>
+              <a
+                href="../pages/book-now.html"
+                class="header__nav--menu-item-button btn"
+                >Book Now</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
+
+      <div class="search-nav-background">
+        <form action="" class="search-nav container">
+          <select
+            type="text"
+            id="category"
+            name=""
+            placeholder="Select a category"
+          >
+            <option value="All Deals">All Deals</option>
+            <option value="Hotels">Hotels</option>
+            <option value="Vacations">Vacations</option>
+            <option value="Cruises">Cruises</option>
+            <option value="Live Performances and Events">
+              Live Performances and Events
+            </option>
+            <option value="Restaurants">Restaurants</option>
+            <option value="Spas">Spas</option>
+            <option value="Family-Friendly Activities">
+              Family-Friendly Activities
+            </option>
+            <option value="All Inclusive Vacations">
+              All Inclusive Vacations
+            </option>
+            <option value="Activities">Activities</option>
+          </select>
+
+          <select
+            type="text"
+            id="destination"
+            name=""
+            placeholder="Start typing or select a destination"
+          >
+            <option value="Anywhere">Anywheres</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Quebec">Quebec</option>
+            <option value="New York">New York</option>
+            <option value="Caribean">Caribean</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+          </select>
+
+          <input type="date" id="Date" name="date" placeholder="Select Dates" />
+
+          <button type="submit">
+            <img src="../Assets/Icons/icons8-search-40.svg" width="16" />
+          </button>
+        </form>
+      </div>
+
       <section class="destination-hero--Iceland">
         <div class="destination-hero container">
           <h1>Iceland</h1>

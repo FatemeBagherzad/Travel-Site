@@ -33,7 +33,7 @@ body {
   line-height: 1.2;
   font-weight: 400;
   overflow-x: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s 0.5s ease-in-out;
   // width:80vw;
   // margin: auto;
   font-size: 1.6rem;
@@ -55,6 +55,18 @@ a {
 }
 
 /**************************/
+/* Button */
+/**************************/
+.btn {
+  &:hover {
+    cursor: pointer;
+    color: $text-color;
+    background-color: transparent;
+    border: 2px solid $text-color;
+  }
+}
+
+/**************************/
 /* navigation */
 /**************************/
 .NavBackground {
@@ -63,22 +75,29 @@ a {
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
-    &--logo {
+  &--logo {
     font-weight: 900;
     font-size: 2rem;
   }
   &--menu {
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
+    font-size: 1.4rem;
     &-item {
       padding: 1rem;
       cursor: pointer;
+      &-button {
+        background-color: $style-color;
+        padding: 0.6rem 1rem;
+        border-radius: 2rem;
+      }
       &:hover {
         border-bottom: 0.2rem solid $style-color;
       }
@@ -88,6 +107,48 @@ a {
 
 .active {
   border-bottom: 0.4rem solid $style-color;
+}
+.activeb{
+  border-bottom: 0.5rem solid $text-color;
+}
+
+/**************************/
+/* Search navigation */
+/**************************/
+.search-nav-background {
+  position: fixed;
+  top: 5rem;
+  background-color: $text-color;
+  height: fit-content;
+  width: 100vw;
+  padding: 0.5rem 0;
+  z-index: 999;
+}
+.search-nav {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  select,
+  input {
+    width: 25rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: $background-color;
+    border-radius: 9px;
+    display: flex;
+  }
+  button {
+    display: inline-block;
+    padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 /**************************/
