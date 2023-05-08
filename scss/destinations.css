@@ -369,7 +369,7 @@ hr {
   color: #ffffff;
   text-shadow: 0.5px 0.5px 2px #335576;
 }
-.destination-hero button {
+.destination-hero a {
   color: #ffffff;
   width: -moz-fit-content;
   width: fit-content;
@@ -378,7 +378,7 @@ hr {
   font-size: 1.8rem;
   padding: 1rem 5rem;
 }
-.destination-hero button:hover {
+.destination-hero a:hover {
   background-color: #ffffff;
 }
 
