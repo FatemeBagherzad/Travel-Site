@@ -1,0 +1,172 @@
+/******************************************/
+/* BELOW 1280px (Portrait, phone) */
+/******************************************/
+@media (max-width: 80rem) {
+  /* ******************Hero Section**************** */
+  @keyframes airplane {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100vw, -70vh);
+    }
+  }
+  /* ******************Book Now Cards**************** */
+  .deals__cardsection {
+    grid-template-columns: 1fr 1fr;
+    width: 75rem;
+    margin: 5rem auto;
+  }
+}
+/******************************************/
+/* BELOW 1010px (Portrait, phone) */
+/******************************************/
+@media (max-width: 63rem) {
+  /* ******************Hero Section**************** */
+  html {
+    font-size: 60%;
+  }
+  .hero__left--heading {
+    font-size: 3rem;
+  }
+  .hero__right img {
+    width: 30rem;
+  }
+  /* ******************Search nav**************** */
+  .search-nav select,
+  .search-nav input {
+    width: 15rem;
+  }
+  .search-nav button {
+    width: 15rem;
+  }
+  /* ******************destination-hero**************** */
+  .itinerary__card {
+    width: 22rem;
+    height: 32rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .itinerary__card h3 {
+    margin-bottom: 1rem;
+  }
+}
+/******************************************/
+/* BELOW 755px (Portrait, phone) */
+/******************************************/
+@media (max-width: 47rem) {
+  html {
+    font-size: 58%;
+  }
+  /* ******************Hero Section**************** */
+  .hero-background {
+    height: 100vh;
+  }
+  .hero {
+    grid-template-columns: 8fr 1fr;
+    margin-top: 11.5rem;
+    position: relative;
+  }
+  .hero__right img {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    width: 20rem;
+    opacity: 0.2;
+    z-index: 0;
+  }
+  /* ******************Search nav**************** */
+  .search-nav-background {
+    height: 6.5rem;
+  }
+  .search-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+  }
+  .search-nav select,
+  .search-nav input,
+  .search-nav button {
+    width: 20rem;
+    height: 2.5rem;
+  }
+  .search-nav #searchbtn {
+    width: 20rem;
+    height: 2.5rem;
+    padding: auto;
+  }
+  /* ******************destination-hero**************** */
+  .card3 {
+    display: none;
+  }
+  .destination-hero {
+    height: 100vh;
+  }
+  /* ******************Book Now Cards**************** */
+  .deals__cardsection {
+    grid-template-columns: 1fr;
+    width: 36rem;
+  }
+  /* ******************Footer**************** */
+  .footer {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 5rem;
+  }
+  .footer__hours--days {
+    display: flex;
+    gap: 2rem;
+  }
+  .footer__social--logos img {
+    margin-top: 1rem;
+  }
+  .footer__hours,
+  .footer__contact,
+  .footer__social {
+    align-items: center;
+    text-align: center;
+  }
+}
+/******************************************/
+/* BELOW 570px (Portrait, phone) */
+/******************************************/
+@media (max-width: 36rem) {
+  /* ******************Hero Section**************** */
+  html {
+    font-size: 56%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .hero__left--heading {
+    font-size: 2.5rem;
+  }
+  .hero__right img {
+    opacity: 0.1;
+  }
+  /* **********Navigation Bar********* */
+  #Navlist {
+    display: none;
+  }
+  /* **********drop down part********* */
+  #dropdownPart {
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    right: 5rem;
+  }
+  .dropdown-content {
+    width: 150px;
+    height: 200px;
+  }
+  /* ******************destination-hero**************** */
+  .card2 {
+    display: none;
+  }
+}

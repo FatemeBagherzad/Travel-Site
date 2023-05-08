@@ -105,9 +105,19 @@ a {
   padding: 0 3.2rem;
 }
 
+hr {
+  border: 1px solid rgb(155, 155, 155);
+}
+
 /**************************/
 /* Button */
 /**************************/
+.btn {
+  background-color: #db7a4e;
+  padding: 0.6rem 3rem;
+  border-radius: 2rem;
+  border: none;
+}
 .btn:hover {
   cursor: pointer;
   color: #335576;
@@ -146,14 +156,6 @@ a {
   padding: 1rem;
   cursor: pointer;
 }
-.header__nav--menu-item-button {
-  background-color: #db7a4e;
-  padding: 0.6rem 1rem;
-  border-radius: 2rem;
-}
-.header__nav--menu-item:hover {
-  border-bottom: 0.2rem solid #db7a4e;
-}
 
 .active {
   border-bottom: 0.4rem solid #db7a4e;
@@ -170,21 +172,24 @@ a {
   position: fixed;
   top: 5rem;
   background-color: #335576;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 4rem;
   width: 100vw;
-  padding: 0.5rem 0;
   z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-nav {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 .search-nav select,
 .search-nav input {
-  width: 25rem;
+  width: 20rem;
+  height: 3rem;
   padding: 0.2rem;
   font-size: 1.2rem;
   font-family: inherit;
@@ -194,14 +199,94 @@ a {
   border-radius: 9px;
   display: flex;
 }
-.search-nav button {
-  display: inline-block;
-  padding: 0.7rem;
-  border-radius: 50%;
-  cursor: pointer;
+.search-nav select:hover,
+.search-nav input:hover {
+  outline: 0.2rem solid black;
+  outline-offset: -0.2rem;
 }
-.search-nav button:hover {
+.search-nav #searchbtn {
+  border-radius: 9px;
+  width: 25rem;
+  height: 3rem;
+  color: #fefaf5;
+}
+.search-nav #searchbtn:hover {
   transform: scale(1.1);
+  border: 1px solid #fefaf5;
+}
+
+/**************************/
+/* Dropdown Button  */
+/**************************/
+#dropdownPart {
+  display: none;
+}
+
+.dropdown {
+  z-index: 999;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: 300;
+  right: -10px;
+  top: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #db7a4e;
+  border-radius: 9px;
+  padding: 0.3rem 5rem 0.3rem 0.3rem;
+  position: fixed;
+  color: #db7a4e;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #393939;
+}
+
+.dropbtn2 {
+  border: 2px solid #db7a4e;
+  padding: 0.2rem 1rem;
+  border-radius: 9px;
+}
+
+.dropdown-content {
+  width: 150px;
+  height: 200px;
+  margin-top: 4rem;
+  display: none;
+  /* position: absolute; */
+  font-size: 1.8rem;
+  background-color: #fefaf5;
+  box-shadow: 0px 0.5rem 0.5rem 0px #393939;
+  z-index: 999;
+  padding-left: 1rem;
+}
+
+.dropdown-content a {
+  color: #335576;
+  /* padding: 1rem 1rem; */
+  text-decoration: none;
+  /* display: flex; */
+}
+
+.dropdown-content a:hover {
+  background-color: #db7a4e;
+  padding: 0.2rem 1rem;
+  border-radius: 9px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in;
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
 }
 
 /**************************/
@@ -216,18 +301,23 @@ a {
   display: flex;
   justify-content: space-between;
   line-height: 2;
+  font-size: smaller;
 }
 .footer h6 {
   color: #db7a4e;
   font-weight: 300;
 }
+.footer h2 {
+  border-bottom: 1px dotted #767676;
+  width: 100%;
+}
 .footer__hours--days {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 .footer__social--logos {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 .footer__social--logos img {
   margin-top: 1.5rem;
@@ -238,7 +328,7 @@ a {
 .footer__social {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /**************************/
@@ -247,7 +337,7 @@ a {
 .hero-background {
   background-color: #fefaf5;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -258,7 +348,7 @@ a {
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 9rem;
   gap: 4rem;
   position: relative;
 }
@@ -273,19 +363,17 @@ a {
   font-size: 4rem;
 }
 .hero__left--button {
-  color: #ffffff;
-  background-color: #db7a4e;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem 4rem;
-  border: none;
-  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  color: #335576;
 }
 .hero__right {
   grid-column: 2;
 }
 .hero__right img {
-  width: 50rem;
+  width: 40rem;
 }
 
 .hero__right {
@@ -314,61 +402,57 @@ a {
     transform: translate(0, 0);
   }
   70% {
-    transform: translate(90rem, -50rem);
+    transform: translate(95rem, -40rem);
   }
   100% {
-    transform: translate(90rem, -40rem);
+    transform: translate(95rem, -30rem);
   }
 }
 /**************************/
 /* Recommendations */
 /**************************/
-.recommendations {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-}
-.recommendations__card {
+/*******************************/
+/* Recommendations flip cards */
+/******************************/
+.recommendations__card2 {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap: 10rem;
+  margin: 10rem auto;
 }
-.recommendations__card--item {
+
+.flip-card {
+  background-color: transparent;
   width: 28rem;
   height: 40rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
   border: 1px solid hsla(0, 0%, 0%, 0.2);
   border-radius: 5px;
   box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
-  color: #ffffff;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  padding: 2rem 2rem;
-  font-size: 2rem;
-}
-.recommendations__card--item:hover {
-  border: 2px solid #ffffff;
-  transform: scale(1.05);
 }
 
-.item1 {
-  background-image: url(../Assets/Images/hawaii.jpg);
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.item2 {
-  background-image: url(../Assets/Images/iceland.jpg);
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-.item3 {
-  background-image: url(../Assets/Images/greece.jpg);
-}
-
-.item1,
-.item2,
-.item3 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.flip-card-back {
+  transform: rotateY(180deg);
 }

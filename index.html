@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/querries.css" />
 
     <title>Travel Site</title>
   </head>
@@ -17,7 +18,7 @@
           <span class="header__nav--logo"
             ><a href="./index.html">Travel Site</a></span
           >
-          <ul class="header__nav--menu">
+          <ul class="header__nav--menu" id="Navlist">
             <li>
               <a class="header__nav--menu-item active" href="./index.html"
                 >Home</a
@@ -38,7 +39,13 @@
                 >Greece</a
               >
             </li>
-            <li><a href="./pages/book-now.html" class="header__nav--menu-item-button btn">Book Now</a></li>
+            <li>
+              <a
+                href="./pages/book-now.html"
+                class="header__nav--menu-item-button btn"
+                >Book Now</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -87,40 +94,51 @@
 
           <input type="date" id="Date" name="date" placeholder="Select Dates" />
 
-          <button type="submit">
-            <img src="./Assets/Icons/icons8-search-40.svg" width="16" />
-          </button>
+          <button type="submit" class="btn" id="searchbtn">Search</button>
         </form>
       </div>
 
-      <section class="hero-background">
-        <div class="hero container">
-          <div class="hero__left">
-            <h1 class="hero__left--heading">
-              Travelling Comes With Endless Discoveries
-            </h1>
-            <p class="hero__left--paragraph">
-              Don't let your dreams be just dreams. Experience the world by
-              booking a vacation with us now.
-            </p>
-            <button class="hero__left--button btn">Get started</button>
-          </div>
-          <div class="hero__right">
-            <img src="./Assets/Images/hero.png" />
-            <a class="hero__right--light"
-              ><img src="./Assets/Images/heroLight.png"
-            /></a>
-          </div>
-
-          <div id="hero__airplane-animation">
-            <img src="./Assets/Images/AirplaneAnimation.png" width="100" />
-          </div>
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="" href="./index.html">Home</a>
+          <a class="" href="./pages/hawaii.html">Hawaii</a>
+          <a class="" href="./pages/iceland.html">Iceland</a>
+          <a class="" href="./pages/greece.html">Greece</a>
+          <a class="dropbtn2" href="./pages/book-now.html">Booknow</a>
         </div>
-      </section>
+      </div>
     </header>
 
-    <section class="recommendations container">
+    <section class="hero-background">
+      <div class="hero container">
+        <div class="hero__left">
+          <h1 class="hero__left--heading">
+            Travelling Comes With Endless Discoveries
+          </h1>
+          <p class="hero__left--paragraph">
+            Don't let your dreams be just dreams. Experience the world by
+            booking a vacation with us now.
+          </p>
+          <button class="hero__left--button btn">Get started</button>
+        </div>
+
+        <div class="hero__right">
+          <img src="./Assets/Images/hero.png" />
+          <a class="hero__right--light"
+            ><img src="./Assets/Images/heroLight.png"
+          /></a>
+        </div>
+
+        <div id="hero__airplane-animation">
+          <img src="./Assets/Images/AirplaneAnimation.png" width="100" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="recommendations container">
       <h1 class="recommendations__header">Recommendations</h1>
+
       <div class="recommendations__card container">
         <a href="./pages/hawaii.html"
           ><div class="recommendations__card--item item1">
@@ -139,6 +157,92 @@
             <h3>Greece</h3>
           </div></a
         >
+      </div>
+    </section> -->
+
+    <section class="recommendations__card2 container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <a href="./pages/hawaii.html"
+              ><img
+                src="./Assets/Images/hawaii.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Hawaii</h3>
+            </a>
+          </div>
+
+          <div class="flip-card-back">
+            <a href="./pages/hawaii.html"
+              ><img
+                src="./Assets/Images/hawaii2.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Hawaii</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <a href="./pages/iceland.html"
+              ><img
+                src="./Assets/Images/iceland.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Iceland</h3>
+            </a>
+          </div>
+
+          <div class="flip-card-back">
+            <a href="./pages/iceland.html"
+              ><img
+                src="./Assets/Images/iceland2.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Iceland</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <a href="./pages/greece.html"
+              ><img
+                src="./Assets/Images/greece.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Greece</h3>
+            </a>
+          </div>
+
+          <div class="flip-card-back">
+            <a href="./pages/greece.html"
+              ><img
+                src="./Assets/Images/greece2.jpg"
+                class=""
+                width="280"
+                height="400"
+              />
+              <h3>Greece</h3>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -194,5 +298,27 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>

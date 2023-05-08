@@ -1,0 +1,207 @@
+/******************************************/
+/* BELOW 1280px (Portrait, phone) */
+/******************************************/
+@media (max-width: 80rem) {
+  /* ******************Hero Section**************** */
+  @keyframes airplane {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100vw, -70vh);
+    }
+  }
+  /* ******************Book Now Cards**************** */
+  .deals__cardsection {
+    grid-template-columns: 1fr 1fr;
+    width: 75rem;
+    margin: 5rem auto;
+  }
+}
+
+/******************************************/
+/* BELOW 1010px (Portrait, phone) */
+/******************************************/
+@media (max-width: 63rem) {
+  /* ******************Hero Section**************** */
+  html {
+    font-size: 60%;
+  }
+
+  .hero {
+    &__left {
+      &--heading {
+        font-size: 3rem;
+      }
+    }
+    &__right {
+      & img {
+        width: 30rem;
+      }
+    }
+  }
+
+  /* ******************Search nav**************** */
+  .search-nav {
+    select,
+    input {
+      width: 15rem;
+    }
+    button {
+      width: 15rem;
+    }
+  }
+
+  /* ******************destination-hero**************** */
+  .itinerary {
+    &__card {
+      width: 22rem;
+      height: 32rem;
+      padding: 1.5rem;
+      gap: 1rem;
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/******************************************/
+/* BELOW 755px (Portrait, phone) */
+/******************************************/
+@media (max-width: 47rem) {
+  html {
+    font-size: 58%;
+  }
+
+  /* ******************Hero Section**************** */
+  .hero-background {
+    height: 100vh;
+  }
+  .hero {
+    grid-template-columns: 8fr 1fr;
+    margin-top: 11.5rem;
+    position: relative;
+    &__right {
+      & img {
+        position: absolute;
+        right: 5%;
+        bottom: 25%;
+        width: 20rem;
+        opacity: 0.2;
+        z-index: 0;
+      }
+    }
+  }
+
+  /* ******************Search nav**************** */
+  .search-nav-background {
+    height: 6.5rem;
+  }
+  .search-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+    select,
+    input,
+    button {
+      width: 20rem;
+      height: 2.5rem;
+    }
+    & #searchbtn {
+      width: 20rem;
+      height: 2.5rem;
+      padding: auto;
+    }
+  }
+
+  /* ******************destination-hero**************** */
+  .card3 {
+    display: none;
+  }
+  .destination-hero {
+    height: 100vh;
+  }
+
+  /* ******************Book Now Cards**************** */
+  .deals__cardsection {
+    grid-template-columns: 1fr;
+    width: 36rem;
+  }
+
+  /* ******************Footer**************** */
+  .footer {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 5rem;
+    &__hours--days {
+      display: flex;
+      gap: 2rem;
+    }
+    &__social--logos {
+      img {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .footer__hours,
+  .footer__contact,
+  .footer__social {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/******************************************/
+/* BELOW 570px (Portrait, phone) */
+/******************************************/
+@media (max-width: 36rem) {
+  /* ******************Hero Section**************** */
+  html {
+    font-size: 56%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 0;
+    &__left {
+      &--heading {
+        font-size: 2.5rem;
+      }
+    }
+    &__right {
+      & img {
+        opacity: 0.1;
+      }
+    }
+  }
+
+  /* **********Navigation Bar********* */
+  #Navlist {
+    // visibility: hidden;
+    display: none;
+  }
+
+  /* **********drop down part********* */
+
+  #dropdownPart {
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    right: 5rem;
+  }
+  .dropdown-content {
+    width: 150px;
+    height: 200px;
+  }
+
+  /* ******************destination-hero**************** */
+  .card2 {
+    display: none;
+  }
+}

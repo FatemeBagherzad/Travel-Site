@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../scss/destinations.css" />
+    <link rel="stylesheet" href="../scss/querries.css" />
 
     <title>Travel Site</title>
   </head>
@@ -17,7 +18,7 @@
           <span class="header__nav--logo"
             ><a href="../index.html">Travel Site</a></span
           >
-          <ul class="header__nav--menu">
+          <ul class="header__nav--menu" id="Navlist">
             <li>
               <a class="header__nav--menu-item" href="../index.html">Home</a>
             </li>
@@ -93,44 +94,55 @@
 
           <input type="date" id="Date" name="date" placeholder="Select Dates" />
 
-          <button type="submit">
-            <img src="../Assets/Icons/icons8-search-40.svg" width="16" />
-          </button>
+          <button type="submit" class="btn" id="searchbtn">Search</button>
         </form>
       </div>
 
-      <section class="destination-hero--Hawaii">
-        <div class="destination-hero container">
-          <h1>Hawaii</h1>
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="" href="../index.html">Home</a>
+          <a class="" href="../pages/hawaii.html">Hawaii</a>
+          <a class="" href="../pages/iceland.html">Iceland</a>
+          <a class="" href="../pages/greece.html">Greece</a>
+          <a class="dropbtn2" href="../pages/book-now.html">Booknow</a>
+        </div>
+      </div>
+    </header>
 
-          <div class="itinerary">
-            <div class="itinerary__card">
-              <h3>Friday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
-            </div>
+    <section class="destination-hero--Hawaii">
+      <div class="destination-hero container">
+        <h1>Hawaii</h1>
 
-            <div class="itinerary__card">
-              <h3>Sataurday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
-            </div>
+        <div class="itinerary">
+          <div class="itinerary__card">
+            <h3>Friday</h3>
+            <p>Breakfast</p>
+            <p>Lunch</p>
+            <p>Dinner</p>
+            <p>Snorkeling</p>
+          </div>
 
-            <div class="itinerary__card">
-              <h3>Sunday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
-            </div>
+          <div class="itinerary__card card2">
+            <h3>Sataurday</h3>
+            <p>Breakfast</p>
+            <p>Lunch</p>
+            <p>Dinner</p>
+            <p>Snorkeling</p>
+          </div>
+
+          <div class="itinerary__card card3">
+            <h3>Sunday</h3>
+            <p>Breakfast</p>
+            <p>Lunch</p>
+            <p>Dinner</p>
+            <p>Snorkeling</p>
           </div>
         </div>
-      </section>
-    </header>
+
+        <button class="btn">More</button>
+      </div>
+    </section>
 
     <footer class="footerBackground">
       <div class="footer container">
@@ -184,5 +196,27 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>

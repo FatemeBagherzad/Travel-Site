@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../scss/destinations.css" />
+    <link rel="stylesheet" href="../scss/booknow.css" />
+    <link rel="stylesheet" href="../scss/querries.css" />
 
     <title>Travel Site</title>
   </head>
@@ -17,7 +18,7 @@
           <span class="header__nav--logo"
             ><a href="../index.html">Travel Site</a></span
           >
-          <ul class="header__nav--menu">
+          <ul class="header__nav--menu" id="Navlist">
             <li>
               <a class="header__nav--menu-item" href="../index.html">Home</a>
             </li>
@@ -91,44 +92,184 @@
 
           <input type="date" id="Date" name="date" placeholder="Select Dates" />
 
-          <button type="submit">
-            <img src="../Assets/Icons/icons8-search-40.svg" width="16" />
-          </button>
+          <button type="submit" class="btn" id="searchbtn">Search</button>
         </form>
       </div>
 
-      <section class="destination-hero--Hawaii">
-        <div class="destination-hero container">
-          <h1>Hawaii</h1>
+      <div class="dropdown" id="dropdownPart">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="" href="../index.html">Home</a>
+          <a class="" href="../pages/hawaii.html">Hawaii</a>
+          <a class="" href="../pages/iceland.html">Iceland</a>
+          <a class="" href="../pages/greece.html">Greece</a>
+          <a class="dropbtn2" href="../pages/book-now.html">Booknow</a>
+        </div>
+      </div>
+    </header>
 
-          <div class="itinerary">
-            <div class="itinerary__card">
-              <h3>Friday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
-            </div>
+    <section class="booknow-hero-background">
+      <div class="booknow-hero container">
+        <div class="booknow-hero__header">
+          <h1>Search vacation packages</h1>
+        </div>
+        <p>Choose two or more items and save on your trip:</p>
+        <hr />
+        <div class="booknow-hero__transport">
+          <button class="btn">Stays</button>
+          <button class="btn">Flight</button>
+          <button class="btn">Cars</button>
+        </div>
+        <form action="" class="booknow-hero__form search-nav">
+          <input
+            type="location"
+            id="Location"
+            name="location"
+            placeholder="Leaving from ..."
+          />
+          <input
+            type="location"
+            id="Location"
+            name="location"
+            placeholder="Going to ..."
+          />
+          <input type="date" id="Date" name="date" placeholder="Select Dates" />
+          <button class="btn">Search</button>
+        </form>
+        <hr />
+      </div>
+    </section>
 
-            <div class="itinerary__card">
-              <h3>Sataurday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
-            </div>
+    <section class="deals container">
+      <div class="deals__hero"><h1>Package deals under CA$699</h1></div>
 
-            <div class="itinerary__card">
-              <h3>Sunday</h3>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Dinner</p>
-              <p>Snorkeling</p>
+      <h2 class="deals__header2">
+        Bundle up your travel plans and you can save
+      </h2>
+      <p>
+        Get the most out of your next trip by choosing a ready-to-book package
+        deal and plan an unforgettable journey with ease. Enjoy the extra
+        convenience of booking everything in one place while finding a fantastic
+        deal.
+      </p>
+      <br />
+
+      <h1>Shop packages that will take you to the most-loved places</h1>
+
+      <div class="deals__cardsection">
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/1.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 3 nights</p>
+            <h4>Quite House near Vancouver Airport</h4>
+            <p>Vancouver</p>
+            <br />
+            <p>Toronto(XYZ) - Vancouver (YVR)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Sat, June 17 - Tue, Jun 20</p>
+              <p>from <span id="price">CA $675</span></p>
             </div>
           </div>
         </div>
-      </section>
-    </header>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/2.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 4 nights</p>
+            <h4>Legacy Vacation Resort - rlando</h4>
+            <p>Orlando</p>
+            <br />
+            <p>Toronto(XYZ) - Orlando (MCO)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Fri, June 16 - Tue, Jun 20</p>
+              <p>from <span id="price">CA $474</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/3.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 4 nights</p>
+            <h4>CoCo Key Hotel and Water Resort</h4>
+            <p>Orlando</p>
+            <br />
+            <p>Toronto(XYZ) - Orlando (MCO)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Sun, June 11 - Thu, jun 15</p>
+              <p>from <span id="price">CA $631</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/4.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 2 nights</p>
+            <h4>Simply Comfort. Downtown Calgary Apts</h4>
+            <p>Calgary</p>
+            <br />
+            <p>Toronto(XYZ) - Calgary (YYC)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Sun, June 25 - Tue, Jun 27</p>
+              <p>from <span id="price">CA $666</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/5.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 4 nights</p>
+            <h4>The START Hotel, Skypod, BW Premier ...</h4>
+            <p>Las Vegas</p>
+            <br />
+            <p>Toronto(XYZ) - Las Vegas (LAS)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Tue, June 6 - Sat, Jun 10</p>
+              <p>from <span id="price">CA $316</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/6.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 4 nights</p>
+            <h4>Golden Nugget Las Vegas Hotel</h4>
+            <p>Las Vegas</p>
+            <br />
+            <p>Toronto(XYZ) - Las Vegas (LAS)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Tue, June 6 - Sat, Jun 10</p>
+              <p>from <span id="price">CA $419</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="deals__cardsection--card">
+          <img src="../Assets/Images/BookNowCards/7.JPG" alt="" />
+          <div class="deals__cardsection--card-text">
+            <p>Economy + 3 nights</p>
+            <h4>Coast Edmonton Plaza Hotel by APA</h4>
+            <p>Edmonton</p>
+            <br />
+            <p>Toronto(XYZ) - Edmonton (YEG)</p>
+            <hr />
+            <div class="deals__cardsection--card-text-bottom">
+              <p>Thu, June 8 - Sun, Jun 11</p>
+              <p>from <span id="price">CA $512</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footerBackground">
       <div class="footer container">
@@ -182,5 +323,27 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>

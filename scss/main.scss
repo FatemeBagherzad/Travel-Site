@@ -7,7 +7,7 @@
 .hero-background {
   background-color: $background-color;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -17,7 +17,7 @@
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 9rem;
   gap: 4rem;
   position: relative;
   &__left {
@@ -30,19 +30,17 @@
       font-size: 4rem;
     }
     &--button {
-      color: $white;
-      background-color: $style-color;
       width: fit-content;
-      padding: 1rem 4rem;
-      border: none;
-      border-radius: 2rem;
+      padding: 1rem 3rem;
+      font-size: 1.8rem;
+      color: $text-color;
     }
   }
 
   &__right {
     grid-column: 2;
     & img {
-      width: 50rem;
+      width: 40rem;
     }
   }
 }
@@ -70,55 +68,103 @@
     transform: translate(0, 0);
   }
   70% {
-    transform: translate(90rem, -50rem);
+    transform: translate(95rem, -40rem);
   }
   100% {
-    transform: translate(90rem, -40rem);
+    transform: translate(95rem, -30rem);
   }
 }
+
 /**************************/
 /* Recommendations */
 /**************************/
-.recommendations {
+// .recommendations {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4rem;
+//   margin-top: 5rem;
+//   margin-bottom: 10rem;
+//   &__card {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     gap: 5rem;
+//     &--item {
+//       width: 28rem;
+//       height: 40rem;
+//       @include card-border-shadow;
+//       color: $white;
+//       display: flex;
+//       align-items: end;
+//       justify-content: end;
+//       padding: 2rem 2rem;
+//       font-size: 2rem;
+//       &:hover {
+//         border: 2px solid $white;
+//         transform: scale(1.05);
+//       }
+//     }
+//   }
+// }
+// .item1 {
+//   background-image: url(../Assets/Images/hawaii.jpg);
+// }
+// .item2 {
+//   background-image: url(../Assets/Images/iceland.jpg);
+// }
+// .item3 {
+//   background-image: url(../Assets/Images/greece.jpg);
+// }
+// .item1,
+// .item2,
+// .item3 {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+/*******************************/
+/* Recommendations flip cards */
+/******************************/
+.recommendations__card2 {
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-  &__card {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    &--item {
-      width: 28rem;
-      height: 40rem;
-      @include card-border-shadow;
-      color: $white;
-      display: flex;
-      align-items: end;
-      justify-content: end;
-      padding: 2rem 2rem;
-      font-size: 2rem;
-      &:hover {
-        border: 2px solid $white;
-        transform: scale(1.05);
-      }
-    }
-  }
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  margin: 10rem auto;
 }
-.item1 {
-  background-image: url(../Assets/Images/hawaii.jpg);
+.flip-card {
+  background-color: transparent;
+  width: 28rem;
+  height: 40rem;
+  perspective: 1000px;
 }
-.item2 {
-  background-image: url(../Assets/Images/iceland.jpg);
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  @include card-border-shadow;
 }
-.item3 {
-  background-image: url(../Assets/Images/greece.jpg);
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
-.item1,
-.item2,
-.item3 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+// .flip-card-front {
+//   background-color: #bbb;
+//   color: black;
+// }
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Verdana Pro";
   src: url("../../Assets/Fonts/VerdanaPro-Regular.eot");
@@ -332,87 +333,117 @@ hr {
 }
 
 /**************************/
-/* Hero */
+/* Book Now hero */
 /**************************/
-.destination-hero {
+.booknow-hero-background {
+  background-color: #fefaf5;
   width: 100vw;
-  height: 90vh;
+  height: -moz-fit-content;
+  height: fit-content;
   padding-top: 11.5rem;
-  padding-bottom: 5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4fr 2fr;
-  gap: 2rem;
-  align-items: center;
-}
-.destination-hero--Hawaii {
-  background-image: url(../Assets/Images/hawaii.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.destination-hero--Iceland {
-  background-image: url(../Assets/Images/iceland.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.destination-hero--Greece {
-  background-image: url(../Assets/Images//greece.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  justify-self: start;
+  margin-bottom: 5rem;
 }
 
-.destination-hero h1 {
-  font-size: 5rem;
-  color: #ffffff;
-  text-shadow: 0.5px 0.5px 2px #335576;
+.booknow-hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
 }
-.destination-hero button {
-  color: #ffffff;
+.booknow-hero__header {
+  grid-row: 1;
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to left, transparent, rgb(75, 186, 255)), url(../Assets/Images/‌BookNow1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #335576;
+  font-size: 2.5rem;
+}
+.booknow-hero p {
+  grid-row: 2;
+}
+.booknow-hero__transport {
+  grid-row: 4;
+  justify-self: center;
+}
+.booknow-hero__form {
+  grid-row: 5;
+  display: flex;
+  gap: 3rem;
+}
+.booknow-hero__form input {
+  border: 2px solid #335576;
+}
+
+/**************************/
+/* Book Now Deals */
+/**************************/
+.deals {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+.deals__hero {
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(to left, transparent, rgb(25, 25, 25)), url(../Assets/Images/‌BookNow5.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #335576;
+  font-size: 2.5rem;
+}
+.deals__header2 {
+  margin: 2rem 0;
+}
+
+.deals__cardsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.deals__cardsection--card {
   width: -moz-fit-content;
   width: fit-content;
-  justify-self: center;
-  align-self: start;
-  font-size: 1.8rem;
-  padding: 1rem 5rem;
-}
-.destination-hero button:hover {
-  background-color: #ffffff;
-}
-
-.itinerary {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  color: black;
-}
-.itinerary__card {
-  width: 26rem;
-  height: 36rem;
-  background-color: #ffffff;
-  border: 1px solid hsla(0, 0%, 0%, 0.2);
+  height: 38rem;
+  border: 1px solid gray;
   border-radius: 5px;
-  box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
-  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.deals__cardsection--card img {
+  width: 36rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.deals__cardsection--card-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-.itinerary__card h3 {
-  border-bottom: 3px solid black;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.itinerary__card p {
-  background-color: #fefaf5;
-  width: 100%;
-  text-align: center;
+  gap: 1rem;
   padding: 1rem;
+  justify-content: space-between;
 }
-.itinerary__card:hover p {
-  box-shadow: 1px 1px #db7a4e;
+.deals__cardsection--card-text h4 {
+  font-size: 1.4rem;
+}
+.deals__cardsection--card-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  align-items: center;
+}
+.deals__cardsection--card-text-bottom #price {
+  font-weight: bold;
+  font-size: 1.8rem;
 }
