@@ -13,6 +13,7 @@ You can view the live version of the project here: [Live Demo on Netlify](https:
 Here’s an animated preview of the project:
 
 ![Project Demo](gif/travel-site.gif)
+![Project Demo](gif/travel-site2.gif)
 
 ## Features
 
