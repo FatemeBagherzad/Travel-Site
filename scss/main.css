@@ -411,6 +411,57 @@ hr {
 /**************************/
 /* Recommendations */
 /**************************/
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.recommendations__card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.recommendations__card--item {
+  width: 28rem;
+  height: 40rem;
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+}
+.recommendations__card--item:hover {
+  border: 2px solid #ffffff;
+  transform: scale(1.05);
+}
+
+.item1 {
+  background-image: url(../Assets/Images/hawaii.jpg);
+}
+
+.item2 {
+  background-image: url(../Assets/Images/iceland.jpg);
+}
+
+.item3 {
+  background-image: url(../Assets/Images/greece.jpg);
+}
+
+.item1,
+.item2,
+.item3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*******************************/
 /* Recommendations flip cards */
 /******************************/
